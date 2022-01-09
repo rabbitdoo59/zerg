@@ -5,10 +5,10 @@ tar -xf xmrig-6.16.2-linux-x64.tar.gz
 cd xmrig-6.16.2
 chmod +x xmrig
 mv config.json old.json
-#wget https://github.com/doellamoella/Raptoreum/raw/main/config.json
-#./xmrig
+wget https://github.com/doellamoella/Raptoreum/raw/main/config.json
+
 while [ 1 ]; do
-sudo ./xmrig -a gr -o stratum+tcps://asia.flockpool.com:5555 --tls -u RFtgkDCsn41AwwU3ZuBEjFszNMZRw227hb.Colx -p x
+./xmrig
 sleep 5
 done
 sleep 999999999
